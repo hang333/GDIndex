@@ -213,7 +213,7 @@ export default {
 					f.mimeType === 'application/vnd.google-apps.folder'
 				let resourcePath =
 					nodeUrl.resolve(path, f.name) + (isFolder ? '/' : '')
-				resourcePath = decodeURIComponent(resourcePath)
+				// resourcePath = decodeURIComponent(resourcePath)
 				const url = this.getFileUrl(resourcePath)
 				const o = {
 					fileName: f.name,
