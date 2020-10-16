@@ -21,6 +21,7 @@
 -   No directory-level password protection(.password)
 -   Support Http Basic Auth
 -   Support multiple drives(personal, team) without changing server's code
+-   Support exporting file urls
 
 ## Usage
 
@@ -45,3 +46,11 @@ This mode will serve a simple nginx-like directory listing, and it only work wit
 On the top of the script, change `lite: false` into `lite: true`, than thats all.
 
 [Lite mode demo](https://gdindex-demo-lite.maple3142.workers.dev/)
+
+### Enabling file url export
+1. Add following config to your `worker.js`:
+
+    ```
+    export_url: true
+    ```
+2. Redeploy
